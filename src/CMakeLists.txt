@@ -1,9 +1,9 @@
 include_directories(.)
 
-add_executable(main main.cpp)
-target_link_libraries(main snark)
+add_executable(GenerateParamsForFiles GenerateParamsForFiles.cpp)
+target_link_libraries(GenerateParamsForFiles snark)
 target_include_directories(
-        main
+        GenerateParamsForFiles
 
         PUBLIC
         ${DEPENDS_DIR}/libsnark
