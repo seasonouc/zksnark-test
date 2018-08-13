@@ -11,7 +11,7 @@
  * @copyright  MIT license (see LICENSE file)
  *****************************************************************************/
 
-#include "algebra/fields/field_utils.hpp"
+#include "libff/algebra/fields/field_utils.hpp"
 
 namespace libzerocash {
 
