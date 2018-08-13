@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(password-circuit)
+project(zksnark-test)
 
 set(CURVE "BN128" CACHE STRING "curves:ALT_BN128, BN128, EDWARDS, MNT4, MNT6")
 set(DEPENDS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/depends")
 set(OPT_FLAGS "" CACHE STRING "Override C++ compiler optimization flags")
-
-option(MULTICORE "Enable parallelized execution, using OpenMP" OFF)
-option(WITH_PROCPS "Use procps for memory profiling" OFF)
-option(WITH_SUPERCOP "Use subset of SUPERCOP" OFF)
-option(VERBOSE "Print internal messages" OFF)
+#
+#option(MULTICORE "Enable parallelized execution, using OpenMP" OFF)
+#option(WITH_PROCPS "Use procps for memory profiling" OFF)
+#option(WITH_SUPERCOP "Use subset of SUPERCOP" OFF)
+#option(VERBOSE "Print internal messages" OFF)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
     # Common compilation flags and warning configuration
