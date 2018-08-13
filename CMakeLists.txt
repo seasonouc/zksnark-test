@@ -25,11 +25,11 @@ if(CMAKE_COMPILER_IS_GNUCXX OR "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
 #    endif()
 endif()
 
-#add_definitions(-DCURVE_${CURVE})
+add_definitions(-DCURVE_${CURVE})
 #
-#if(${CURVE} STREQUAL "BN128")
-#    add_definitions(-DBN_SUPPORT_SNARK=1)
-#endif()
+if(${CURVE} STREQUAL "BN128")
+    add_definitions(-DBN_SUPPORT_SNARK=1)
+endif()
 #
 #if("${VERBOSE}")
 #    add_definitions(-DVERBOSE=1)
