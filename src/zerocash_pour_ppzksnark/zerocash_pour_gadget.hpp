@@ -30,6 +30,7 @@
 namespace libzerocash {
 
 using namespace libsnark;
+using namespace libff;
 
 /**
  * Gadget for the NP statement Zerocash Pour.
@@ -57,7 +58,7 @@ using namespace libsnark;
  *
  *   (D0) commitments_to_old_address_public_keys[i]
  *        = H(old_address_public_key_variables[i] || old_coin_serial_number_nonce_variables[i])
- *
+ *F
  *   (D1) old_coin_value_commitment_nonces[i]
  *        = H(old_address_commitment_nonce_variables[i] || commitments_to_old_address_public_keys[i] [0..128])
  *
