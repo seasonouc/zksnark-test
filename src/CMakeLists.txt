@@ -1,6 +1,9 @@
 include_directories(.)
 
-add_executable(GenerateParamsForFiles GenerateParamsForFiles.cpp)
+#generate excutable file
+#add_executable(GenerateParamsForFiles GenerateParamsForFiles.cpp)
+#generate shared library
+add_library(zk SHARED GenerateParamsForFiles.cpp)
 target_link_libraries(GenerateParamsForFiles snark)
 target_include_directories(
         GenerateParamsForFiles

@@ -13,7 +13,10 @@ set(DEPENDS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/depends")
 
 if(CMAKE_COMPILER_IS_GNUCXX OR "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
     # Common compilation flags and warning configuration
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra -Wfatal-errors -pthread")
+    #generate excutable file
+    #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra -Wfatal-errors -pthread")
+    #generate shared library
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -fPIC -Wall -Wextra -Wfatal-errors -pthread")
 
 #    if("${MULTICORE}")
 #        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp")
